@@ -1,0 +1,39 @@
+{
+  "name": "www-the-hole-story",
+  "version": "1.0.0",
+  "description": "Anne's Website",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "webpack -d --watch --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:gixxi/www-the-hole-story.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mithril": "^2.0.0-RC3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "^3.0.0",
+    "file-loader": "^1.1.10",
+    "html-webpack-plugin": "^3.0.4",
+    "style-loader": "^0.20.2",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.0",
+    "webpack-merge": "^4.2.1"
+  },
+  "bundledDependencies": [
+    "mithril"
+  ]
+}
