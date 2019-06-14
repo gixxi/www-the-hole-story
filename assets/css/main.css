@@ -40,7 +40,8 @@ html {
   height: 100%;
   line-height: 1.6;
 }
-html span {
+html span,
+html div.text {
   font-size: 1.2em;
 }
 html body {
@@ -49,12 +50,15 @@ html body {
   margin: initial;
 }
 html body a {
-  color: #393F50;
   text-decoration: none;
   cursor: pointer;
+  color: #393F50;
 }
 html body > div {
   display: flex;
+}
+html body .xtr-padding-right {
+  padding-right: 16px;
 }
 html body .header {
   padding-left: 6vw;
@@ -120,6 +124,9 @@ html body .section .title {
   font-weight: bold;
   margin-bottom: 16px;
 }
+html body .section.padding-bottom {
+  padding-bottom: 6vw;
+}
 html body #thumbnails-content {
   padding-top: initial;
 }
@@ -136,7 +143,14 @@ html body #thumbnails-content .row:not(:last-child) {
 }
 html body #footer {
   background: #393F50;
-  color: #FCFE52;
+  color: #BCAA8A;
+  font-size: 0.8em;
+}
+html body #footer .row .title {
+  font-weight: initial;
+}
+html body #footer a {
+  color: #BCAA8A;
 }
 html body #footer .footer-content {
   width: 100%;

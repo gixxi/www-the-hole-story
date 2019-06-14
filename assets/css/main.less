@@ -2,7 +2,7 @@
 @background: white;
 @foreground: #393F50;
 @background2: @foreground;
-@foreground2: #FCFE52;
+@foreground2: #BCAA8A;
 @pageMargin: 2vw;
 @dxMargin: 6vw;
 @stdPadding: 16px;
@@ -43,7 +43,7 @@ html {
     height: 100%;
     line-height: 1.6;
 
-    span {
+    span, div.text {
       font-size: 1.2em;
     }
 
@@ -53,13 +53,17 @@ html {
       margin: initial;
 
       a {
-        color: @foreground;
         text-decoration: none;
         cursor: pointer;
+        color: @foreground;
       }
 
       > div {
         display: flex;
+      }
+
+      .xtr-padding-right {
+        padding-right: @stdPadding;
       }
 
       .header {          
@@ -133,6 +137,10 @@ html {
         }
       }
 
+      .section.padding-bottom {
+        padding-bottom: @dxMargin;
+      }
+
 
       #thumbnails-content {
         padding-top: initial;
@@ -154,6 +162,16 @@ html {
       #footer {
         background: @background2;
         color: @foreground2;
+        font-size: 0.8em;
+        .row {
+            .title {
+                font-weight: initial;
+            }
+        }
+        a {
+            color: @foreground2;
+        }
+
         .footer-content {
           width: 100%;
           a {
